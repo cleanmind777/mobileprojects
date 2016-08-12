@@ -1,7 +1,7 @@
 /**
- * @interface IExample
+ * @interface IGyro
  */
-interface IExample
+interface IGyro
 {
 	/**
 	 * Returns a value!
@@ -13,4 +13,4 @@ interface IExample
 	foo(str?:string):string;
 }
 
-export default IExample;
+export default IGyro;

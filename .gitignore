@@ -1,5 +1,6 @@
 # copy to .npmignore
 .idea
+example
 node_modules
 typings
 .tscache

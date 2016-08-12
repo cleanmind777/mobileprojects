@@ -1,9 +1,9 @@
 /**
- * @namespace example
- * @class Example
+ * @namespace gyro
+ * @class Gyro
  * @constructor
  */
-export default class Example
+export default class Gyro
 {
 	/**
 	 * Returns a value!
@@ -12,6 +12,12 @@ export default class Example
 	 * @param {string} str The input string
 	 * @return {string}
      */
+
+	constructor()
+	{
+		console.log("INIT");
+	}
+
 	public foo(str?:string):string
 	{
 		if (typeof str == 'undefined')
