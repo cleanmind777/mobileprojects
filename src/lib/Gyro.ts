@@ -64,11 +64,11 @@ export default class Gyro
 	/**
 	 * Begin the tracking
 	 *
-	 * @method startTracking
+	 * @method enableTracking
 	 * @param {any} callback
 	 * @return {void}
 	 **/
-	public startTracking(callback) {
+	public enableTracking(callback) {
 		this.interval = setInterval(() => {
 			callback(this.measurements);
 		}, this.gyro.frequency);
@@ -77,10 +77,10 @@ export default class Gyro
 	/**
 	 * Stop the tracking
 	 *
-	 * @method stopTracking
+	 * @method disableTracking
 	 * @return {void}
 	 **/
-	public stopTracking() {
+	public disableTracking() {
 		clearInterval(this.interval);
 	};
 
