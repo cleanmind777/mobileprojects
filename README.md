@@ -30,9 +30,38 @@ Or grab one of the following files from the `/dist/` folder for manual use:
 
 ```ts
 import SengGyro from 'seng-gyro';
-// import SengGyro from 'seng-gyro/lib/classname';
 
-// do something with SengGyro
+var gyro = new SengGyro();
+
+// Get the orientation
+gyro.getOrientation();
+
+// Get all the features
+gyro.getFeatures();
+
+// Enable the tracking
+gyro.enableTracking((o) => {
+	console.log(o.alpha);
+	console.log(o.beta);
+	console.log(o.gamma);
+});
+
+
+
+disableTracking
+// get a property
+gyro.getFeatures('defaultLocale');
+
+
+
+
+this._gyro.enableTracking((o) => {
+			//console.log(o);
+		});
+
+		console.log(this._gyro.getOrientation());
+		console.log(this._gyro.getFeatures());
+
 ```
 
 
