@@ -31,26 +31,29 @@ Or grab one of the following files from the `/dist/` folder for manual use:
 ```ts
 import SengGyro from 'seng-gyro';
 
-var gyro = new SengGyro();
+var sengGyro = new SengGyro();
 
 // Get the orientation
-gyro.getOrientation();
+sengGyro.getOrientation();
 
 // Get all the features
-gyro.getFeatures();
+sengGyro.getFeatures();
 
 // Enable the tracking
-gyro.enableTracking((o) => {
+sengGyro.enableTracking((o) => {
 	console.log(o.alpha);
 	console.log(o.beta);
 	console.log(o.gamma);
 });
 
 // Disable the tracking
-gyro.disableTracking();
+sengGyro.disableTracking();
 
-// get a property
-gyro.hasFeature('devicemotion');
+// Check the feature
+sengGyro.hasFeature('devicemotion');
+
+// Set the frequency
+sengGyro.frequency = 500
 ```
 
 
