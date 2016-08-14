@@ -6,7 +6,7 @@
 
 # seng-gyro
 
-Add a description here...
+Quick and easy access for the accelerometer and gyroscope data on mobile devices. Combines all the information into one simple object.
 
 
 ## Installation
