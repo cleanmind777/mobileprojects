@@ -17,45 +17,14 @@ Add a description here...
 npm i -S seng-gyro
 ```
 
-### other
+Or grab one of the following files from the `/dist/` folder for manual use:
 
-We also have browser, amd, commonjs, umd, systemjs and es6 versions of
-this module available attached to the [Github Releases](https://github.com/mediamonks/seng-gyro/releases).
-
-<!---
-
-Note: The below cannot be used yet, as there is no way to link to a
-specific version yet without updating this readme manually after each
-new version.
-
-
-### browser
-
-```html
-<script src="http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro.min.js"></script>
-```
-```js
-console.log(window.SengGyro)
-```
-
-### other
-
-Besides the browser version, there are other versions available for
-download as well:
-
-- [browser](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro.js) (and [minified](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro.min.js))
-- [umd](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro.js) (and [minified](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro-umd.min.js))
-- [amd](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro-amd.js)
-- [commonjs](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro-commonjs.js)
-- [systemjs](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro-system.js)
-- [es6](http://mediamonks-development.s3.amazonaws.com/seng/libs/seng-gyro/1.2.0/seng-gyro-es6.zip)
-
--->
-
-### manual
-
-Check the **build** section below to see your you can build for all the
-targets yourself.
+- **umd** (bundled with webpack)
+- **amd** (bundled with webpack)
+- **commonjs2** (bundled with webpack, but why don't you use npm?)
+- **browser** (bundled with webpack, available as `window.SengBoilerplate`)
+- **system**
+- **es6**
 
 ## Usage
 
