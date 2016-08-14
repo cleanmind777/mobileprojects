@@ -46,22 +46,11 @@ gyro.enableTracking((o) => {
 	console.log(o.gamma);
 });
 
+// Disable the tracking
+gyro.disableTracking();
 
-
-disableTracking
 // get a property
-gyro.getFeatures('defaultLocale');
-
-
-
-
-this._gyro.enableTracking((o) => {
-			//console.log(o);
-		});
-
-		console.log(this._gyro.getOrientation());
-		console.log(this._gyro.getFeatures());
-
+gyro.hasFeature('devicemotion');
 ```
 
 
