@@ -290,23 +290,4 @@ export default class Gyro
 			this.measurements.rawGamma = e.gamma;
 		}, true);
 	}
-
-	/**
-	 * Returns a value!
-	 *
-	 * @method foo
-	 * @param {string} str The input string
-	 * @return {string}
-	 */
-	/*public foo(str?:string):string
-	{
-		if (typeof str == 'undefined')
-		{
-			return 'baz';
-		}
-		else
-		{
-			return str + 'bar';
-		}
-	}*/
 }

@@ -1,24 +1,29 @@
-import Gyro from 'Gyro.ts';
-import IGyro from 'IGyro.ts';
-import {mockGyro} from './GyroMock';
+import Gyro from '../src/lib/Gyro.ts';
+//import IGyro from '../src/lib/IGyro.ts';
+//import {mockGyro} from './GyroMock';
 import {expect} from 'chai';
 
-let example:IGyro;
+let gyroInstance:Gyro;
 
 describe('Gyro', () =>
 {
 	beforeEach(function()
 	{
-		example = new Gyro();
+		gyroInstance = new Gyro();
 	});
 
-	it('should return the correct environment', () =>
+	it('should return the default frequency', () =>
 	{
-		expect(example.foo(mockGyro)).to.equal('foobar');
+		expect(gyroInstance.gyro.frequency).to.be.a('number');
 	});
 
-	it('should return the default environment when none has been supplied', () =>
+	it('should return if the feature exists', () =>
 	{
-		expect(example.foo()).to.equal('baz');
+		expect(gyroInstance.hasFeature('devicemotion')).to.be.a('boolean');
+	});
+
+	it('should return the features', () =>
+	{
+		expect(gyroInstance.getFeatures()).to.be.instanceof(Array);
 	});
 });
