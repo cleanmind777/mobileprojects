@@ -6,4 +6,3 @@ import "ts-helpers";
 // in the browser as named exports here.
 // Interfaces should be ignored, as they don't export any code.
 export {default as Gyro} from './lib/Gyro';
-export {default as Dummy} from './lib/Dummy';

@@ -14,7 +14,6 @@
   },
   "files": [
     "./typings/index.d.ts",
-    "./src/index.ts",
-    "./src/lib/Dummy.ts"
+    "./src/index.ts"
   ]
 }
