@@ -1,4 +1,5 @@
 [![Travis](https://img.shields.io/travis/mediamonks/seng-gyro.svg?maxAge=2592000)](https://travis-ci.org/mediamonks/seng-gyro)
+[![Code Climate](https://codeclimate.com/github/alandawi/seng-gyro/badges/gpa.svg)](https://codeclimate.com/github/alandawi/seng-gyro)
 [![Code Climate](https://img.shields.io/codeclimate/github/mediamonks/seng-gyro.svg?maxAge=2592000)](https://codeclimate.com/github/mediamonks/seng-gyro)
 [![Coverage Status](https://coveralls.io/repos/github/alandawi/seng-gyro/badge.svg?branch=master)](https://coveralls.io/github/alandawi/seng-gyro?branch=master)
 [![npm](https://img.shields.io/npm/v/seng-gyro.svg?maxAge=2592000)](https://www.npmjs.com/package/seng-gyro)
