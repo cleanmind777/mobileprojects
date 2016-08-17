@@ -1,11 +1,9 @@
 import Gyro from '../src/lib/Gyro.ts';
-//import IGyro from '../src/lib/IGyro.ts';
-//import {mockGyro} from './GyroMock';
+import IQuaternion from '../src/lib/IQuaternion.ts';
+import IEulerToQuaternion from '../src/lib/IEulerToQuaternion.ts';
 import {expect} from 'chai';
-
-import sinon = require('sinon');
-import sinonChai = require('sinon-chai');
-chai.use(sinonChai);
+import sinon from 'sinon';
+chai.use(sinon);
 
 let gyroInstance:Gyro;
 
@@ -41,9 +39,9 @@ describe('Gyro', () =>
 		expect(gyroInstance.calibration).to.be.an('object');
 	});
 
-	it('should return an object (measurements)', () =>
+	it('should return an object (measurement)', () =>
 	{
-		expect(gyroInstance.measurements).to.be.an('object');
+		expect(gyroInstance.measurement).to.be.an('object');
 	});
 
 	it('should return an object (gyro)', () =>

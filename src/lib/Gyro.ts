@@ -1,14 +1,20 @@
+import IQuaternion from "./IQuaternion";
+import IEulerToQuaternion from "./IEulerToQuaternion";
+
 /**
  * @namespace gyro
  * @class Gyro
  * @constructor
  */
+
+//type ObjectType = (Object) => void;
+
 export default class Gyro
 {
 	private gyro:any            = {};
 	private features:any        = [];
 	private interval:any        = null;
-	private measurements:any    = {
+	private measurement:any    = {
 		x: null,
 		y: null,
 		z: null,
@@ -30,12 +36,12 @@ export default class Gyro
 
 	constructor()
 	{
-		this.gyro.frequency = 1000;
+		this.gyro.frequency = 800;
 
 		if (window && window.addEventListener) {
-			window.addEventListener('MozOrientation', this.mozOrientationInitListener.bind(this), true);
-			window.addEventListener('devicemotion', this.deviceMotionListener.bind(this), true);
-			window.addEventListener('deviceorientation', this.deviceOrientationListener.bind(this), true);
+			window.addEventListener('MozOrientation', this.mozOrientationInitListener.bind(this));
+			window.addEventListener('devicemotion', this.deviceMotionListener.bind(this));
+			window.addEventListener('deviceorientation', this.deviceOrientationListener.bind(this));
 		}
 	}
 
@@ -52,9 +58,9 @@ export default class Gyro
 		e.target.removeEventListener('MozOrientation', this.mozOrientationInitListener, true);
 
 		e.target.addEventListener('MozOrientation', (e) => {
-			this.measurements.x = e.x - this.calibration.x;
-			this.measurements.y = e.y - this.calibration.y;
-			this.measurements.z = e.z - this.calibration.z;
+			this.measurement.x = e.x - this.calibration.x;
+			this.measurement.y = e.y - this.calibration.y;
+			this.measurement.z = e.z - this.calibration.z;
 		}, true);
 	}
 
@@ -71,9 +77,9 @@ export default class Gyro
 		e.target.removeEventListener('devicemotion', this.deviceMotionListener, true);
 
 		e.target.addEventListener('devicemotion', (e) => {
-			this.measurements.x = e.accelerationIncludingGravity.x - this.calibration.x;
-			this.measurements.y = e.accelerationIncludingGravity.y - this.calibration.y;
-			this.measurements.z = e.accelerationIncludingGravity.z - this.calibration.z;
+			this.measurement.x = e.accelerationIncludingGravity.x - this.calibration.x;
+			this.measurement.y = e.accelerationIncludingGravity.y - this.calibration.y;
+			this.measurement.z = e.accelerationIncludingGravity.z - this.calibration.z;
 		}, true);
 	}
 
@@ -103,13 +109,13 @@ export default class Gyro
 			let calibrated = this.quaternionMultiply(calib, raw);
 			let calibEuler = this.quaternionToEuler(calibrated);
 
-			this.measurements.alpha = calibEuler.alpha;
-			this.measurements.beta = calibEuler.beta;
-			this.measurements.gamma = calibEuler.gamma;
+			this.measurement.alpha = calibEuler.alpha;
+			this.measurement.beta = calibEuler.beta;
+			this.measurement.gamma = calibEuler.gamma;
 
-			this.measurements.rawAlpha = e.alpha;
-			this.measurements.rawBeta = e.beta;
-			this.measurements.rawGamma = e.gamma;
+			this.measurement.rawAlpha = e.alpha;
+			this.measurement.rawBeta = e.beta;
+			this.measurement.rawGamma = e.gamma;
 		}, true);
 	}
 
@@ -120,9 +126,9 @@ export default class Gyro
 	 * @return {void}
 	 **/
 	public calibrate() {
-		for (let i in this.measurements) {
-			if (this.measurements.hasOwnProperty(i)) {
-				this.calibration[i] = (typeof this.measurements[i] === 'number') ? this.measurements[i] : 0;
+		for (let i in this.measurement) {
+			if (this.measurement.hasOwnProperty(i)) {
+				this.calibration[i] = (typeof this.measurement[i] === 'number') ? this.measurement[i] : 0;
 			}
 		}
 	};
@@ -134,7 +140,7 @@ export default class Gyro
 	 * @return {void}
 	 **/
 	public getOrientation() {
-		return this.measurements;
+		return this.measurement;
 	};
 
 	/**
@@ -144,9 +150,9 @@ export default class Gyro
 	 * @param {any} callback
 	 * @return {void}
 	 **/
-	public enableTracking(callback:any) {
+	public enableTracking(callback:any) { // ObjectType
 		this.interval = setInterval(() => {
-			callback(this.measurements);
+			callback(this.measurement);
 		}, this.gyro.frequency);
 	};
 
@@ -194,7 +200,7 @@ export default class Gyro
 	 * @param {any} e
 	 * @return {void}
 	 **/
-	private eulerToQuaternion(e:any) {
+	private eulerToQuaternion(e:IEulerToQuaternion) {
 		let s:any = Math.PI / 180;
 		let x:any = e.beta * s, y = e.gamma * s, z = e.alpha * s;
 		let cX:any = Math.cos(x / 2);
@@ -218,7 +224,7 @@ export default class Gyro
 	 * @param {any} b
 	 * @return {void}
 	 **/
-	private quaternionMultiply(a:any, b:any) {
+	private quaternionMultiply(a:IQuaternion, b:IQuaternion) {
 		return {
 			w: a.w * b.w - a.x * b.x - a.y * b.y - a.z * b.z,
 			x: a.w * b.x + a.x * b.w + a.y * b.z - a.z * b.y,
@@ -235,7 +241,7 @@ export default class Gyro
 	 * @param {any} a
 	 * @return {void}
 	 **/
-	private quaternionApply(v:any, a:any) {
+	private quaternionApply(v:IQuaternion, a:IQuaternion) {
 		v = this.quaternionMultiply( a, { x:v.x, y:v.y, z:v.z, w:0 } );
 		v = this.quaternionMultiply( v, { w:a.w, x:-a.x, y:-a.y, z:-a.z } );
 		return { x:v.x, y:v.y, z:v.z };
@@ -249,7 +255,7 @@ export default class Gyro
 	 * @param {any} b
 	 * @return {void}
 	 **/
-	private vectorDot(a:any, b:any) {
+	private vectorDot(a:IQuaternion, b:IQuaternion) {
 		return a.x * b.x + a.y * b.y + a.z * b.z;
 	}
 
@@ -260,7 +266,7 @@ export default class Gyro
 	 * @param {any} q
 	 * @return {void}
 	 **/
-	private quaternionToEuler(q:any) {
+	private quaternionToEuler(q:IQuaternion) {
 		let s = 180 / Math.PI;
 		let front = this.quaternionApply( { x:0, y:1, z:0 }, q );
 		let alpha = (front.x == 0 && front.y == 0) ?
