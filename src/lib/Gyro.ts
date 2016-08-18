@@ -38,11 +38,35 @@ export default class Gyro
 	{
 		this.gyro.frequency = 800;
 
+		this.addListeners();
+	}
+
+	/**
+	 * Init all the listeners
+	 *
+	 * @method addListeners
+	 * @return {void}
+	 **/
+	public addListeners():void
+	{
 		if (window && window.addEventListener) {
 			window.addEventListener('MozOrientation', this.mozOrientationInitListener.bind(this));
 			window.addEventListener('devicemotion', this.deviceMotionListener.bind(this));
 			window.addEventListener('deviceorientation', this.deviceOrientationListener.bind(this));
 		}
+	}
+
+	/**
+	 * Remove all the listeners
+	 *
+	 * @method removeListeners
+	 * @return {void}
+	 **/
+	public removeListeners():void
+	{
+		window.removeEventListener('MozOrientation', this.mozOrientationInitListener.bind(this));
+		window.removeEventListener('devicemotion', this.deviceMotionListener.bind(this));
+		window.removeEventListener('deviceorientation', this.deviceOrientationListener.bind(this));
 	}
 
 	/**
@@ -164,6 +188,7 @@ export default class Gyro
 	 **/
 	public disableTracking() {
 		clearInterval(this.interval);
+		this.removeListeners();
 	};
 
 	/**
