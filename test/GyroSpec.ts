@@ -14,12 +14,12 @@ describe('General', () =>
 
 	it('the interval should return a number', () =>
 	{
-		expect(gyroInstance.gyro.interval).to.be.a('number');
+		expect(gyroInstance.config.interval).to.be.a('number');
 	});
 
 	it('should return an object (gyro)', () =>
 	{
-		expect(gyroInstance.gyro).to.be.an('object');
+		expect(gyroInstance.config).to.be.an('object');
 	});
 
 	it('should return the orientation', () =>
