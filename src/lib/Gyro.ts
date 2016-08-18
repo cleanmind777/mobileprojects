@@ -11,10 +11,10 @@ import IEulerToQuaternion from "./IEulerToQuaternion";
 
 export default class Gyro
 {
-	private gyro:any            = {};
-	private features:any        = [];
-	private interval:any        = null;
-	private measurement:any    = {
+	private gyro:any            			= {};
+	private features:any        			= [];
+	private trackingIntervalId:any        	= null;
+	private measurement:any    				= {
 		x: null,
 		y: null,
 		z: null,
@@ -22,7 +22,7 @@ export default class Gyro
 		beta: null,
 		gamma: null
 	};
-	private calibration:any     = {
+	private calibration:any     			= {
 		x: 0,
 		y: 0,
 		z: 0,
@@ -36,7 +36,7 @@ export default class Gyro
 
 	constructor()
 	{
-		this.gyro.frequency = 800;
+		this.gyro.interval = 800;
 
 		this.addListeners();
 	}
@@ -175,9 +175,9 @@ export default class Gyro
 	 * @return {void}
 	 **/
 	public enableTracking(callback:any) { // ObjectType
-		this.interval = setInterval(() => {
+		this.trackingIntervalId = setInterval(() => {
 			callback(this.measurement);
-		}, this.gyro.frequency);
+		}, this.gyro.interval);
 	};
 
 	/**
@@ -187,7 +187,7 @@ export default class Gyro
 	 * @return {void}
 	 **/
 	public disableTracking() {
-		clearInterval(this.interval);
+		clearInterval(this.trackingIntervalId);
 		this.removeListeners();
 	};
 

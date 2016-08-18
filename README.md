@@ -53,8 +53,8 @@ sengGyro.disableTracking();
 // Check the feature
 sengGyro.hasFeature('devicemotion');
 
-// Set the frequency
-sengGyro.frequency = 500
+// Set the interval
+sengGyro.interval = 500
 ```
 
 

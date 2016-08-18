@@ -14,9 +14,9 @@ describe('Gyro', () =>
 		gyroInstance = new Gyro();
 	});
 
-	it('should return the default frequency', () =>
+	it('should return the default interval', () =>
 	{
-		expect(gyroInstance.gyro.frequency).to.be.a('number');
+		expect(gyroInstance.gyro.interval).to.be.a('number');
 	});
 
 	it('should return if the feature exists', () =>
