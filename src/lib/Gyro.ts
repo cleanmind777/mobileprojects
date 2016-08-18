@@ -199,12 +199,7 @@ export default class Gyro
 	 * @return {boolean}
 	 **/
 	public hasFeature(feature:string) {
-		for (let i in this.features) {
-			if (feature == this.features[i]) {
-				return true;
-			}
-		}
-		return false;
+		return this.features.indexOf(feature) != -1;
 	};
 
 	/**

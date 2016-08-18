@@ -2,31 +2,24 @@ import Gyro from '../src/lib/Gyro.ts';
 import IQuaternion from '../src/lib/IQuaternion.ts';
 import IEulerToQuaternion from '../src/lib/IEulerToQuaternion.ts';
 import {expect} from 'chai';
-//import sinon from 'sinon';
-//chai.use(sinon);
 
 let gyroInstance:Gyro;
 
-describe('Gyro', () =>
+describe('General', () =>
 {
-	beforeEach(function()
+	beforeEach(() =>
 	{
 		gyroInstance = new Gyro();
 	});
 
-	it('should return the default interval', () =>
+	it('the interval should return a number', () =>
 	{
 		expect(gyroInstance.gyro.interval).to.be.a('number');
 	});
 
-	it('should return if the feature exists', () =>
+	it('should return an object (gyro)', () =>
 	{
-		expect(gyroInstance.hasFeature('devicemotion')).to.be.a('boolean');
-	});
-
-	it('should return the features', () =>
-	{
-		expect(gyroInstance.getFeatures()).to.be.instanceof(Array);
+		expect(gyroInstance.gyro).to.be.an('object');
 	});
 
 	it('should return the orientation', () =>
@@ -42,16 +35,6 @@ describe('Gyro', () =>
 	it('should return an object (measurement)', () =>
 	{
 		expect(gyroInstance.measurement).to.be.an('object');
-	});
-
-	it('should return an object (gyro)', () =>
-	{
-		expect(gyroInstance.gyro).to.be.an('object');
-	});
-
-	it('should return an array (features)', () =>
-	{
-		expect(gyroInstance.features).to.be.instanceOf(Array);
 	});
 
 	/*it('should return ok the event listener of devicemotion', () =>
