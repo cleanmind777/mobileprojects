@@ -37,14 +37,4 @@ describe('General', () =>
 	{
 		expect(gyroInstance.measurement).to.be.an('object');
 	});
-
-	/*it('should return ok the event listener of devicemotion', () =>
-	{
-		const event = new Event('devicemotion');
-		const A = window;
-		const A_handler = sinon.spy();
-		A.addEventListener('T', A_handler);
-		A.dispatchEvent(event);
-		expect(A_handler).to.have.been.called;
-	});*/
 });
