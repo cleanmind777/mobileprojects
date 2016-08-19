@@ -25,7 +25,7 @@ describe('Operations', () =>
         });
     });
 
-    describe('quaternionToEuler', () =>
+    describe('eulerToQuaternion', () =>
     {
         it('should return an object', () =>
         {
@@ -54,6 +54,38 @@ describe('Operations', () =>
         {
             let data = gyroInstance.quaternionMultiply({ x:2, y:4, z:6, w:8 }, { x:20, y:30, z:40, w:50 });
             expect(data).to.deep.equal({w: 0, x: 240, y: 480, z: 600});
+        });
+    });
+
+    describe('quaternionApply', () =>
+    {
+        it('should return an object', () =>
+        {
+            let data = gyroInstance.quaternionApply({ x:2, y:4, z:6, w:8 }, { x:20, y:30, z:40, w:50 });
+            expect(data).to.be.an('object');
+        });
+
+
+        it('should return the correct result', () =>
+        {
+            let data = gyroInstance.quaternionApply({ x:2, y:4, z:6, w:8 }, { x:20, y:30, z:40, w:50 });
+            expect(data).to.deep.equal({x: 17200, y: 18400, z: 31600});
+        });
+    });
+
+    describe('quaternionToEuler', () =>
+    {
+        it('should return an object', () =>
+        {
+            let data = gyroInstance.quaternionToEuler({ x:2, y:4, z:6, w:8 });
+            expect(data).to.be.an('object');
+        });
+
+
+        it('should return the correct result', () =>
+        {
+            let data = gyroInstance.quaternionToEuler({ x:2, y:4, z:6, w:8 });
+            expect(data).to.deep.equal({alpha: 63.43494882292201, beta: 41.810314895778596, gamma: 26.565051177077994});
         });
     });
 });

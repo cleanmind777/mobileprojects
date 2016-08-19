@@ -13,6 +13,11 @@ describe('General', () =>
 		gyroInstance = new Gyro();
 	});
 
+	it('features should be empty by default', () =>
+	{
+		expect(gyroInstance.features).to.be.empty;
+	});
+
 	it('the interval should return a number', () =>
 	{
 		expect(gyroInstance.config.interval).to.be.a('number');
