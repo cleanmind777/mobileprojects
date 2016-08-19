@@ -1,5 +1,6 @@
 import Gyro from '../src/lib/Gyro.ts';
 import IQuaternion from '../src/lib/IQuaternion.ts';
+import IEventListener from '../src/lib/IEventListener.ts';
 import IEulerToQuaternion from '../src/lib/IEulerToQuaternion.ts';
 import {expect} from 'chai';
 

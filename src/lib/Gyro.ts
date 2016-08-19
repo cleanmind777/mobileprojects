@@ -1,13 +1,12 @@
 import IQuaternion from "./IQuaternion";
 import IEulerToQuaternion from "./IEulerToQuaternion";
+import IEventListener from "./IEventListener";
 
 /**
  * @namespace gyro
  * @class Gyro
  * @constructor
  */
-
-//type ObjectType = (Object) => void;
 
 export default class Gyro
 {
@@ -76,7 +75,7 @@ export default class Gyro
 	 * @param {any} e
 	 * @return {void}
 	 **/
-	public mozOrientationInitListener(e:any):void
+	public mozOrientationInitListener(e:IEventListener):void
 	{
 		this.features.push('MozOrientation');
 		e.target.removeEventListener('MozOrientation', this.mozOrientationInitListener, true);
@@ -95,7 +94,7 @@ export default class Gyro
 	 * @param {any} e
 	 * @return {void}
 	 **/
-	public deviceMotionListener(e:any):void
+	public deviceMotionListener(e:IEventListener):void
 	{
 		this.features.push('devicemotion');
 		e.target.removeEventListener('devicemotion', this.deviceMotionListener, true);
@@ -114,7 +113,7 @@ export default class Gyro
 	 * @param {any} e
 	 * @return {void}
 	 **/
-	public deviceOrientationListener(e:any):void
+	public deviceOrientationListener(e:IEventListener):void
 	{
 		this.features.push('deviceorientation');
 		e.target.removeEventListener('deviceorientation', this.deviceOrientationListener, true);
@@ -174,7 +173,7 @@ export default class Gyro
 	 * @param {any} callback
 	 * @return {void}
 	 **/
-	public enableTracking(callback:any) { // ObjectType
+	public enableTracking(callback:any) {
 		this.trackingIntervalId = setInterval(() => {
 			callback(this.measurement);
 		}, this.config.interval);

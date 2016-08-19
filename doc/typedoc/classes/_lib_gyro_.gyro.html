@@ -105,14 +105,15 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#features" class="tsd-kind-icon">features</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#gyro" class="tsd-kind-icon">gyro</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#interval" class="tsd-kind-icon">interval</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#trackingintervalid" class="tsd-kind-icon">tracking<wbr>Interval<wbr>Id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_lib_gyro_.gyro.html#addlisteners" class="tsd-kind-icon">add<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_lib_gyro_.gyro.html#calibrate" class="tsd-kind-icon">calibrate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_lib_gyro_.gyro.html#devicemotionlistener" class="tsd-kind-icon">device<wbr>Motion<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_lib_gyro_.gyro.html#deviceorientationlistener" class="tsd-kind-icon">device<wbr>Orientation<wbr>Listener</a></li>
@@ -126,6 +127,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#quaternionapply" class="tsd-kind-icon">quaternion<wbr>Apply</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#quaternionmultiply" class="tsd-kind-icon">quaternion<wbr>Multiply</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#quaterniontoeuler" class="tsd-kind-icon">quaternion<wbr>ToEuler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_lib_gyro_.gyro.html#removelisteners" class="tsd-kind-icon">remove<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#vectordot" class="tsd-kind-icon">vector<wbr>Dot</a></li>
 							</ul>
 						</section>
@@ -133,7 +135,7 @@
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#calibration" class="tsd-kind-icon">calibration</a></li>
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#measurements" class="tsd-kind-icon">measurements</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="_lib_gyro_.gyro.html#measurement" class="tsd-kind-icon">measurement</a></li>
 							</ul>
 						</section>
 					</div>
@@ -151,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L29">lib/Gyro.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L35">lib/Gyro.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_lib_gyro_.gyro.html" class="tsd-signature-type">Gyro</a></h4>
@@ -162,38 +164,65 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected tsd-is-external">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+					<a name="config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L14">lib/Gyro.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
 					<a name="features" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> features</h3>
 					<div class="tsd-signature tsd-kind-icon">features<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L9">lib/Gyro.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L15">lib/Gyro.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
-					<a name="gyro" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> gyro</h3>
-					<div class="tsd-signature tsd-kind-icon">gyro<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="trackingintervalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> tracking<wbr>Interval<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">tracking<wbr>Interval<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L8">lib/Gyro.ts:8</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
-					<a name="interval" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> interval</h3>
-					<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L10">lib/Gyro.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L16">lib/Gyro.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="addlisteners" class="tsd-anchor"></a>
+					<h3>add<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L50">lib/Gyro.ts:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Init all the listeners</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>method</dt>
+									<dd><p>addListeners</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
 					<a name="calibrate" class="tsd-anchor"></a>
 					<h3>calibrate</h3>
@@ -204,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L48">lib/Gyro.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L152">lib/Gyro.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L246">lib/Gyro.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L98">lib/Gyro.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L265">lib/Gyro.ts:265</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L117">lib/Gyro.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L83">lib/Gyro.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L189">lib/Gyro.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L71">lib/Gyro.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L177">lib/Gyro.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -351,13 +380,13 @@
 					<a name="eulertoquaternion" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> euler<wbr>ToQuaternion</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">euler<wbr>ToQuaternion<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">euler<wbr>ToQuaternion<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_ieulertoquaternion_.ieulertoquaternion.html" class="tsd-signature-type">IEulerToQuaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L121">lib/Gyro.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L223">lib/Gyro.ts:223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +402,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>e: <span class="tsd-signature-type">any</span></h5>
+									<h5>e: <a href="../interfaces/_lib_ieulertoquaternion_.ieulertoquaternion.html" class="tsd-signature-type">IEulerToQuaternion</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
@@ -404,7 +433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L109">lib/Gyro.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L211">lib/Gyro.ts:211</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -431,7 +460,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L60">lib/Gyro.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L166">lib/Gyro.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -452,13 +481,13 @@
 					<a name="hasfeature" class="tsd-anchor"></a>
 					<h3>has<wbr>Feature</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Feature<span class="tsd-signature-symbol">(</span>feature<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Feature<span class="tsd-signature-symbol">(</span>feature<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L94">lib/Gyro.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L201">lib/Gyro.ts:201</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -474,7 +503,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>feature: <span class="tsd-signature-type">any</span></h5>
+									<h5>feature: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>(MozOrientation, devicemotion, or deviceorientation)</p>
 									</div>
@@ -494,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L227">lib/Gyro.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L79">lib/Gyro.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -521,13 +550,13 @@
 					<a name="quaternionapply" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> quaternion<wbr>Apply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">quaternion<wbr>Apply<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">quaternion<wbr>Apply<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a>, a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L162">lib/Gyro.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L264">lib/Gyro.ts:264</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,22 +572,22 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>v: <span class="tsd-signature-type">any</span></h5>
+									<h5>v: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 								<li>
-									<h5>a: <span class="tsd-signature-type">any</span></h5>
+									<h5>a: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
-									<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									<h5>z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 						</li>
@@ -568,13 +597,13 @@
 					<a name="quaternionmultiply" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> quaternion<wbr>Multiply</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">quaternion<wbr>Multiply<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">quaternion<wbr>Multiply<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L145">lib/Gyro.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L247">lib/Gyro.ts:247</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -590,10 +619,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>a: <span class="tsd-signature-type">any</span></h5>
+									<h5>a: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 								<li>
-									<h5>b: <span class="tsd-signature-type">any</span></h5>
+									<h5>b: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
@@ -618,13 +647,13 @@
 					<a name="quaterniontoeuler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> quaternion<wbr>ToEuler</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">quaternion<wbr>ToEuler<span class="tsd-signature-symbol">(</span>q<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">quaternion<wbr>ToEuler<span class="tsd-signature-symbol">(</span>q<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L187">lib/Gyro.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L289">lib/Gyro.ts:289</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -640,7 +669,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>q: <span class="tsd-signature-type">any</span></h5>
+									<h5>q: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
@@ -658,17 +687,44 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
-					<a name="vectordot" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> vector<wbr>Dot</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">vector<wbr>Dot<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="removelisteners" class="tsd-anchor"></a>
+					<h3>remove<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L176">lib/Gyro.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L65">lib/Gyro.ts:65</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove all the listeners</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>method</dt>
+									<dd><p>removeListeners</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
+					<a name="vectordot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> vector<wbr>Dot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">vector<wbr>Dot<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L278">lib/Gyro.ts:278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,10 +740,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>a: <span class="tsd-signature-type">any</span></h5>
+									<h5>a: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 								<li>
-									<h5>b: <span class="tsd-signature-type">any</span></h5>
+									<h5>b: <a href="../interfaces/_lib_iquaternion_.iquaternion.html" class="tsd-signature-type">IQuaternion</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -703,7 +759,7 @@
 					<div class="tsd-signature tsd-kind-icon">calibration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L19">lib/Gyro.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L25">lib/Gyro.ts:25</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
@@ -712,7 +768,7 @@
 						<div class="tsd-signature tsd-kind-icon">alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L23">lib/Gyro.ts:23</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L29">lib/Gyro.ts:29</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -722,7 +778,7 @@
 						<div class="tsd-signature tsd-kind-icon">beta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L24">lib/Gyro.ts:24</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L30">lib/Gyro.ts:30</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -732,7 +788,7 @@
 						<div class="tsd-signature tsd-kind-icon">gamma<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L25">lib/Gyro.ts:25</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L31">lib/Gyro.ts:31</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -742,7 +798,7 @@
 						<div class="tsd-signature tsd-kind-icon">raw<wbr>Alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L26">lib/Gyro.ts:26</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L32">lib/Gyro.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -752,7 +808,7 @@
 						<div class="tsd-signature tsd-kind-icon">raw<wbr>Beta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L27">lib/Gyro.ts:27</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L33">lib/Gyro.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -762,7 +818,7 @@
 						<div class="tsd-signature tsd-kind-icon">raw<wbr>Gamma<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L28">lib/Gyro.ts:28</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L34">lib/Gyro.ts:34</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -772,7 +828,7 @@
 						<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L20">lib/Gyro.ts:20</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L26">lib/Gyro.ts:26</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -782,7 +838,7 @@
 						<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L21">lib/Gyro.ts:21</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L27">lib/Gyro.ts:27</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -792,77 +848,77 @@
 						<div class="tsd-signature tsd-kind-icon">z<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L22">lib/Gyro.ts:22</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L28">lib/Gyro.ts:28</a></li>
 							</ul>
 						</aside>
 					</section>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-external">
-					<a name="measurements" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> measurements</h3>
-					<div class="tsd-signature tsd-kind-icon">measurements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="measurement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> measurement</h3>
+					<div class="tsd-signature tsd-kind-icon">measurement<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L11">lib/Gyro.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L17">lib/Gyro.ts:17</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
-						<a name="measurements.alpha-1" class="tsd-anchor"></a>
+						<a name="measurement.alpha-1" class="tsd-anchor"></a>
 						<h3>alpha</h3>
 						<div class="tsd-signature tsd-kind-icon">alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L15">lib/Gyro.ts:15</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L21">lib/Gyro.ts:21</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
-						<a name="measurements.beta-1" class="tsd-anchor"></a>
+						<a name="measurement.beta-1" class="tsd-anchor"></a>
 						<h3>beta</h3>
 						<div class="tsd-signature tsd-kind-icon">beta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L16">lib/Gyro.ts:16</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L22">lib/Gyro.ts:22</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
-						<a name="measurements.gamma-1" class="tsd-anchor"></a>
+						<a name="measurement.gamma-1" class="tsd-anchor"></a>
 						<h3>gamma</h3>
 						<div class="tsd-signature tsd-kind-icon">gamma<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L17">lib/Gyro.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L23">lib/Gyro.ts:23</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
-						<a name="measurements.x-1" class="tsd-anchor"></a>
+						<a name="measurement.x-1" class="tsd-anchor"></a>
 						<h3>x</h3>
 						<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L12">lib/Gyro.ts:12</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L18">lib/Gyro.ts:18</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
-						<a name="measurements.y-1" class="tsd-anchor"></a>
+						<a name="measurement.y-1" class="tsd-anchor"></a>
 						<h3>y</h3>
 						<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L13">lib/Gyro.ts:13</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L19">lib/Gyro.ts:19</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external">
-						<a name="measurements.z-1" class="tsd-anchor"></a>
+						<a name="measurement.z-1" class="tsd-anchor"></a>
 						<h3>z</h3>
 						<div class="tsd-signature tsd-kind-icon">z<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/e287d32/src/lib/Gyro.ts#L14">lib/Gyro.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/alandawi/seng-gyro/blob/77e19fd/src/lib/Gyro.ts#L20">lib/Gyro.ts:20</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -881,14 +937,17 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">"index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_lib_dummy_.html">"lib/<wbr>Dummy"</a>
-					</li>
 					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
 					<li class="current tsd-kind-external-module tsd-is-external">
 						<a href="../modules/_lib_gyro_.html">"lib/<wbr>Gyro"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_lib_ieulertoquaternion_.html">"lib/IEuler<wbr>ToQuaternion"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_lib_iquaternion_.html">"lib/IQuaternion"</a>
 					</li>
 				</ul>
 			</nav>
@@ -903,13 +962,16 @@
 								<a href="_lib_gyro_.gyro.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+								<a href="_lib_gyro_.gyro.html#config" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
 								<a href="_lib_gyro_.gyro.html#features" class="tsd-kind-icon">features</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
-								<a href="_lib_gyro_.gyro.html#gyro" class="tsd-kind-icon">gyro</a>
+								<a href="_lib_gyro_.gyro.html#trackingintervalid" class="tsd-kind-icon">tracking<wbr>Interval<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
-								<a href="_lib_gyro_.gyro.html#interval" class="tsd-kind-icon">interval</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_lib_gyro_.gyro.html#addlisteners" class="tsd-kind-icon">add<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="_lib_gyro_.gyro.html#calibrate" class="tsd-kind-icon">calibrate</a>
@@ -950,6 +1012,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
 								<a href="_lib_gyro_.gyro.html#quaterniontoeuler" class="tsd-kind-icon">quaternion<wbr>ToEuler</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_lib_gyro_.gyro.html#removelisteners" class="tsd-kind-icon">remove<wbr>Listeners</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
 								<a href="_lib_gyro_.gyro.html#vectordot" class="tsd-kind-icon">vector<wbr>Dot</a>
 							</li>
@@ -957,7 +1022,7 @@
 								<a href="_lib_gyro_.gyro.html#calibration" class="tsd-kind-icon">calibration</a>
 							</li>
 							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-external">
-								<a href="_lib_gyro_.gyro.html#measurements" class="tsd-kind-icon">measurements</a>
+								<a href="_lib_gyro_.gyro.html#measurement" class="tsd-kind-icon">measurement</a>
 							</li>
 						</ul>
 					</li>
