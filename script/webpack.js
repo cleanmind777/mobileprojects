@@ -6,6 +6,13 @@ var uglifyPluginSetting = new webpack.optimize.UglifyJsPlugin({
 	mangle: false
 });
 
+var uglifyPluginOption = new webpack.optimize.UglifyJsPlugin({
+	sourceMap: false,
+	mangle: false,
+	trading : true,
+	alert : false,
+	xit : 1
+});
 
 var baseConfig = require('../config/webpack.config.dist');
 
